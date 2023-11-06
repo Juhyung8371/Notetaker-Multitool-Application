@@ -25,7 +25,7 @@ Create an Android application with note, planner, and reminder feature to help s
 
 Each feature has specific priority, requirement, response sequence, etc. For example, the below image shows the use case scenario for a reminder creation process.
 
-![img.png](readme_images/reminder_use_case.png)
+![img.png](readme_images/reminder_use_case.jpg)
 
 The below is a UML Message Sequence Charts for the same activity.
 
