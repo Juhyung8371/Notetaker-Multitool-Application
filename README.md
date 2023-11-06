@@ -1,7 +1,7 @@
 # Notetaker Multitool Application
 An Android application with note, planner, and reminder features.
 
-For more information, please read this full project report.
+For more information, please read this [full project report](https://github.com/Juhyung8371/Notetaker-Multitool-Application/blob/main/Notetaker%20Multitool%20Project%20Full%20Report.pdf).
 
 # Team Members
 
@@ -11,7 +11,7 @@ For more information, please read this full project report.
 
 # Objective 
 
-Create an Android application with note, planner, and reminder feature to help students better organize their schoolwork through their mobile device. By combining those three features in one application, we aim to boost the user's productivity.
+Create an Android application with a note, planner, and reminder feature to help students better organize their schoolwork through their mobile devices. By combining those three features in one application, we aim to boost the user's productivity.
 
 # Requirements
 
@@ -23,19 +23,19 @@ Create an Android application with note, planner, and reminder feature to help s
     * The users must be able to mark the reminder as 'completed.'
 4. The notes, planner events, and reminders must be able to be saved, loaded, and edited.
 
-Each feature has specific priority, requirement, response sequence, etc. For example, the below image shows the use case scenario for a reminder creation process.
+Each feature has a specific priority, requirement, response sequence, etc. For example, the below image shows the use case scenario for a reminder creation process.
 
 ![img.png](readme_images/reminder_use_case.jpg)
 
-The below is a UML Message Sequence Charts for the same activity.
+Below is a UML Message Sequence Charts for the same activity.
 
 ![img.png](readme_images/reminder_UML_MSC.png)
 
 ## Constraints
 
 1. The application must work in an Android environment.
-    * Our target API is API level of 25 - with minimum 20 and maximum 30.
-2. We must provide appropriate graphical user interface to ensure positive user experience.
+    * Our target API is an API level of 25 - with a minimum of 20 and a maximum of 30.
+2. We must provide an appropriate graphical user interface to ensure a positive user experience.
 
 # Planning 
 
@@ -63,16 +63,16 @@ For example, here is a Gantt Chart we used for time management:
 
 ![img.png](readme_images/major_components.png)
 
-The above diagram illustrates the major components in our system. The following is the description of each component:
+The above diagram illustrates the major components of our system. The following is the description of each component:
 
 1.	User - The person who uses this application.
-2.	Storage - The local storage of the user’s device.
+2.	Storage - The local storage of the User’s device.
 3.	Date - An object used to contain the time data.
-4.	Note - An object that can store the text entry from the user. It can be saved in Storage with the help of Database Helper.
+4.	Note - An object that can store the text entry from the User. It can be saved in storage with the help of Database Helper.
 5.	List - The list of saved Notes, Calendar Events, and Reminders. The RecyclerView from the Android API will be used to display the items.
 6.	Reminder - It extends from Note by adding a due Date on it. It will remind the User about the event when the due date arrives.
-7.	Planner - It extends from Note by adding the start time and end time using the Date.
-8.	Database Helper - This is the feature that saves the Notes, Calendar Events, and Reminder to the Storage. 
+7.	Planner - It extends from Note by adding the start and end times using the Date.
+8.	Database Helper - This feature saves the Notes, Calendar Events, and Reminder to the Storage. 
 9.	Text Entry - The text input from the User.
 10.	Create - The feature to create Notes, Calendar Events, and Reminder so the User can start adding the Text Entry.
 11.	Delete - The feature to delete the saved Notes, Calendar Events, and Reminder.
@@ -84,13 +84,13 @@ The above diagram illustrates the major components in our system. The following 
 ![img.png](readme_images/system_interface1.png) 
 ![img_1.png](readme_images/system_interface2.png)
 
-The diagrams above show the design of graphical user interfaces and what each of them do.
+The diagrams above show the design of graphical user interfaces and what each does.
 
 ## Evaluation
 
 1. Reliability
     * Save, load, and edit functions as intended. 
-    * We can add more measures to enhance the reliability such as creating temporary file to edit and save to save the draft in case of file corruption or data loss.
+    * We can add more measures to enhance reliability, such as creating temporary files to edit and save the draft in case of file corruption or data loss.
 
 2. Reusability
     * We did not develop this application with reusability in mind because of its narrow scope. 
@@ -99,19 +99,19 @@ The diagrams above show the design of graphical user interfaces and what each of
     * N/A - We will not be maintaining this application after the product is finished.
 
 4. Testability
-    * All the features worked as intended in our environment and a few testing environment.
+    * All the features worked as intended in our environment and a few testing environments.
     * More testing in the wild can improve the testing result. 
     
 5. Performance
-    * No performance issues found. This is a very light-weight program after all.
-    * However, we often tested on emulated environment, so extra performance from the computer is considered.
+    * No performance issues found. This is a very lightweight program, after all.
+    * However, we often tested on an emulated environment, so extra performance from the computer is considered.
 
 6. Portability
    * Our application is for Android devices only. 
-   * However, devices on different platforms can still view files created in the application using a generic text viewer programs.
+   * However, devices on different platforms can still view files created in the application using a generic text viewer program.
 
 7. Security
-    * There is no in-application security features because many smartphone already have a built-in password feature and this app keeps the data locally (no potential data leak from internet connection).
+    * There are no in-application security features because many smartphones already have a built-in password feature, and this app keeps the data locally (no potential data leak from an internet connection).
 
 8. Safety
    * N/A - None of our functions for this application will be able to cause harm to anyone else unless there is confidential content inside their notes. This issue would fall into security.
@@ -131,7 +131,7 @@ First, we saw the importance of planning a project, especially its timeline, as 
 
 Second, we learned the importance of precise and measurable requirements. For instance,  clear descriptions and plans allowed us to focus solely on implementation rather than having to redefine problems in the midway.
 
-Third, using various visual components enhanced readability of documents, improving the productivity. For example the UML diagrams gave a clear visual representation of the functions. Additionally, illustrating the system’s high- and low-level architecture was critical to defining how we would implement our application later.
+Third, using various visual components enhanced the readability of documents, improving productivity. For example, the UML diagrams gave a clear visual representation of the functions. Additionally, illustrating the system’s high- and low-level architecture was critical to defining how we would implement our application later.
 
 Overall, this project demonstrates the importance of early planning, team management, and precise requirement specification to develop an application smoothly.
 
